@@ -1,106 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+* { margin: 0;padding: 0;box-sizing: border-box;font-family: Arial, sans-serif;}
 
-/* General Body Styling */
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: aqua;
-  color: #fff;
-}
+body {display: flex;flex-direction: column; align-items: center;padding: 20px;background-color: aqua;color: #fff;}
 
-/* Header Section */
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-header h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  color: yellow;
-}
+header { text-align: center; margin-bottom: 20px;}
+header h1 {font-size: 3em;margin-bottom: 10px;color: yellow;}
+header h3 {font-size: 2em;margin-bottom: 10px;color: white;}
+header nav { display: flex;gap: 15px; font-weight: bold;justify-content: center;}
+header nav a {color: yellow;text-decoration: none; padding: 8px 12px; border-radius: 40px;border-left: 2px solid #ddd;
+border-right: 2px solid #ddd; transition: color 0.3s ease, background-color 0.3s ease;}
 
-header h3 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: white;
-}
+header nav a:hover {color: #fff;background-color: #4a4a4a;}
 
-header nav {
-  display: flex;
-  gap: 15px;
-  font-weight: bold;
-  justify-content: center;
-}
+#photo {display: flex;justify-content: center;  align-items: center;  margin-bottom: 15px;}
+.photo {  width: 150px;  height: 150px;  object-fit: cover;  border: 3px solid #4a77a8;  transition: transform 0.3s ease;}
 
-header nav a {
-  color: yellow;
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 40px;
-  border-left: 2px solid #ddd;
-  border-right: 2px solid #ddd;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
+.photo:hover { transform: scale(1.1);}
 
-header nav a:hover {
-  color: #fff;
-  background-color: #4a4a4a;
-}
 
-/* Profile Photo Styling */
-#photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-}
+section {  width: 100%;  max-width: 600px;  margin-bottom: 20px;  padding: 20px;  background-color: brown;  
+border: 1px solid #4a77a8;  border-radius: 8px;  text-align: center;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
 
-.photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 3px solid #4a77a8;
-  transition: transform 0.3s ease;
-}
+section h2 { color: white; font-size: 1.5em;  margin-bottom: 10px;}
 
-.photo:hover {
-  transform: scale(1.1);
-}
 
-/* General Section Styling */
-section {
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: brown;
-  border: 1px solid #4a77a8;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-section h2 {
-  color: white;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-/* Schools Section */
-.schools-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-top: 10px;
-}
+.schools-grid {  display: grid;  grid-template-columns: repeat(2, 1fr);  gap: 15px;  margin-top: 10px;}
 
 .schools-grid div {
   padding: 20px;
@@ -118,7 +42,7 @@ section h2 {
   background-color: #4a77a8;
 }
 
-/* Work Experience Table */
+
 #work table {
   width: 100%;
   border-collapse: collapse;
@@ -140,7 +64,7 @@ section h2 {
   text-align: center;
 }
 
-/* List Styling */
+
 ul {
   list-style-type: none;
   margin: 10px 0;
@@ -163,7 +87,7 @@ ul li:hover {
   transform: translateX(5px);
 }
 
-/* Sidebar Menu */
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -211,7 +135,6 @@ ul li:hover {
   color: #52eff2;
 }
 
-/* Bio Data Sections */
 .bio-header h1 {
   color: #f5f5f5;
   font-size: 2em;
@@ -240,7 +163,7 @@ ul li:hover {
   margin-bottom: 5px;
 }
 
-/* Footer Styling */
+
 footer {
   width: 100%;
   background-color: #333;
@@ -268,7 +191,6 @@ footer p b:hover {
   color: #fff;
 }
 
-/* Main Content */
 main {
   flex: 1;
   width: 100%;
@@ -277,7 +199,6 @@ main {
   align-items: center;
 }
 
-/* Navigation for mobile */
 nav {
   display: flex;
   justify-content: space-around;
@@ -299,7 +220,7 @@ nav a:hover {
   color: black;
 }
 
-/* Responsive for mobile */
+
 @media (max-width: 768px) {
   header h1 {
     font-size: 2em;
@@ -333,14 +254,14 @@ nav a:hover {
   }
 }
 
-/* More responsive adjustments for smaller devices */
+
 @media (max-width: 480px) {
   .schools-grid {
     grid-template-columns: 1fr;
   }
 
   .photo {
-    width: 120px; /* Reduce photo size on mobile */
+    width: 120px; 
     height: 120px;
   }
 
