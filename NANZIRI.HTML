@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDGET</title>
+    <link rel="stylesheet"type="text/css" href="BRIDGET.CSS"/>
+</head>
+<body>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#schools">Schools</a> 
+         <a href="#career_prospects">Career Prospects</a>
+        <a href="#work">Work Experience</a> 
+    </div>
+
+    <section id="header">
+        <header>
+            <span class="menu-icon" onclick="openSidebar()">&#9776; Menu</span>
+			<H1>MY PERSONAL WEBSITE</H1>
+            <h3> NANZIRI BRIDGET BLIS 3</h3>
+            <div id="photo">
+                <img src="bridget.jpg" alt="bridget" class="photo">
+            </div>
+            <nav>
+                <a href="#schools">Schools</a> 
+                <a href="#hobbies">Hobbies</a>
+                <a href="#work">Work Experience</a> 
+				<a href="#work">Career Prospects</a> 
+            </nav>
+        </header>
+    </section>
+
+    <section id="schools">
+        <h2>Schools Attended</h2>
+        <div class="schools-grid">
+            <div>2008-2014<br><h2>St Joseph's primary school Nabbingo</h2><hr><br>
+			St Joseph is a primary school located at nabbingo
+<br>Its is 9 kilo meeters away from masaka road along bataka road
+<br>It is a government school and its near Trinity college nabbingo
+<br> Its for both boys and girls as well day and bording school
+<br> A catholic school and in most cases participates in church songs championships for school
+<br> It also encorage students to participate in different co/curricular activies like chess, 
+netball, football among others<BR>
+<img src="Joseph.jpeg"alt="Joseph" class="photo "></div>
+            <div>2015-2018<br><h2>St Joseph's secondary school Busega </h2><hr><br>
+			It is a seconary school both boys and girls A and O level
+<br>It is located along Nateete-Kampala road dome.
+<br> its a catholic aided school near st carmel church Busega and it has full contro over it.</div>
+            <div>2019-2020<h2><br>St Noa Girls Zana <br></h2><hr><br>
+			 It is a girls school only both O and A level
+<br>it is located along at Zana along Entebbe road
+<br>it is a catholic school but it welcomes other students from diferent religion
+<br>it gives previlleges to other regions to worship their God
+<br>its a sports school and it participate in diffrent games at east African level
+<img src="OIP.jpeg"alt="OIP" class="photo 1">
+</div>
+           <div>2022 to date<br>
+		   <a href="https://mak.ac.ug/" target="_blank"><h2>Makerere University</h2><hr></a><br>
+			This is the first univerty in uganda to be opened<br>
+It was established in 1922 so far hundred years plus<br>
+it has raised my ugandans and other nationalities interms of intellectual.
+<BR>
+<img src="MAKERERE.jpg"alt="MAKERERE"class="photo" ></div>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2>Work Experience</h2>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Position</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>Records officer</td>
+                <td>Ministry of Health</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>Counsellor</td>
+                <td>Female foundation Uganda</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Wrestling<br><img src="WRESTLING.jpg"alt="WRESTLING" class="photo 1"></li>
+            <li>Travelling<br><img src="traveling.jpg"alt="traveling" class="photo 1"></li>
+            <li>Movie<br><img src="movie.jpg"alt="movie" class="photo 1"></li>
+            <li>Gossiping<br><img src="gossiping.jpg"alt="gossiping" class="photo 1"></li>
+            <li>Dancing<br><img src="dancing.jpg"alt="dancing" class="photo 1"></li>
+            
+        </ul>
+    </section>
+
+    <section id="career_prospects">
+        <h2>Career Prospects</h2>
+        <ul>
+            <li>Consultant<br><img src="consultant.jpg"alt="consultant" class="photo 1"></li>
+            <li>Minister <br><img src="minister.jpg"alt="minister" class="photo 1"></li>
+            <li>farmer<br><img src="farming.jpg"alt="farming" class="photo 1"></li>
+          
+        </ul>
+    </section>
+
+<section class="contact-me">
+        <h2>Contact Me</h2><br>
+        <div class="contact-content">
+            <form action="mailto:nanziribridget798@gmail@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Your Name:</label><br>
+                <input type="text" placeholder="Enter your name" required><br>
+                
+                <label for="email">Your Email:</label><br>
+                <input type="email"  placeholder="Enter your email" required><br>
+                
+                <label for="message">Your Message:</label><br>
+                <textarea id="message"  rows="5" placeholder="Enter your message" required></textarea><br>
+                
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script>
+        function openSidebar() {
+            document.getElementById("sidebar").style.width = "250px";
+        }
+
+        function closeSidebar() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+	
+	<footer> <p>&copy; <b>Nanziri Bridget 2024</b>. All rights reserved.</p> </footer>
+</body>
+</html>

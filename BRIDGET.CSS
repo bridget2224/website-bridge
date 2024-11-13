@@ -1,0 +1,78 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; } 
+/* General Body Styling */ body { display: flex; flex-direction: column; align-items: center; 
+padding: 20px; background-color: aqua; /* Dark background for a sleek look */ color:#fff ;
+ /* Light text color for contrast */ } /* Header Section */ 
+ header { text-align: center; margin-bottom: 20px; } 
+ header h1 { font-size: 3em; /* Larger font size for emphasis */ margin-bottom: 10px; color: yellow; /*
+ white color for headings */ } /* Navigation Styling */
+ header h3 { font-size: 2em; /* Larger font size for emphasis */ margin-bottom: 10px; color: white; /*
+ white color for headings */ } /* Navigation Styling */ 
+ header nav { display: inline-flex; gap: 15px; 
+ /* Increased gap for better spacing */ font-weight: bold; } 
+ header nav a { color:yellow ; 
+ /* Light color for text */ text-decoration: none; padding: 8px 12px; border-radius: 40px;
+ transition: color 0.3s ease, background-color 0.3s ease; border-right:2px solid #ddd; 
+color:yellow;border-left:2px solid #ddd;}
+ header nav a:hover { color: #fff; background-color:#4a4a4a; /* Slightly darker hover color */ } 
+ /* Profile Photo Styling */ #photo { display: flex; justify-content: center; align-items: center;
+ margin-bottom: 15px; text-align: center; /* Optional: if you have text inside the #photo element */ } 
+ 
+ .photo { width: 150px; height: 150px; object-fit: cover; border: 3px solid #4a77a8; transition: transform 0.3s ease; } .photo:hover { transform: scale(1.1); } /* General Section Styling */ .Photo { width: 150px; height: 150px; object-fit: cover; border: 3px solid #4a77a8; transition: transform 0.3s ease; }
+ .photo:hover { transform: scale(1.1); } /* General Section Styling */
+ 
+ .Photo:hover { transform: scale(1.1); } /* General Section Styling */
+ section { width: 100%; max-width: 600px; margin-bottom: 20px; padding: 20px; background-color: brown;
+ /* Slightly darker background for sections */ border: 1px solid #4a77a8; 
+ /* Border matches the theme color */ border-radius: 8px; text-align: center; 
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */ } 
+ section h2 { color: white; /* Blue color for section headings */ font-size: 1.5em; /* Adjusted font size */
+ margin-bottom: 10px; } /* Schools Section */ 
+ .schools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; 
+ /* Increased gap for better spacing */ margin-top: 10px; }
+ .schools-grid div { padding: 20px; 
+ background-color:black; /* Slightly darker background for grid items */ border-radius: 8px; 
+ text-align: center; font-size: 1em; /* Adjusted font size */ font-weight: bold; color: white;
+ /* Light color for text */ transition: transform 0.3s ease, background-color 0.3s ease; } 
+ .schools-grid div:hover { transform: scale(1.05); background-color: #4a77a8; }
+ /* Hover color matches the theme */ } /* Work Experience Table */
+ #work table { width: 100%; border-collapse: collapse; color: #fff; /* Light color for text */ }
+ #work table, #work th, #work td { border: 1px solid #ddd; padding: 10px; }
+ #work th { background-color:black; /* Background color matches the theme */ font-weight: bold; 
+ text-align: center; } #work td { text-align: center; } /* List Styling */ 
+ ul { list-style-type: none; margin: 10px 0; padding: 0; } ul li { background-color: #4a4a4a; 
+ /* Slightly darker background for list items */ padding: 10px; margin-bottom: 5px; border-radius: 5px;
+ font-size: 1em; /* Adjusted font size */ font-weight: bold; color: #f5f5f5; /* Light color for text */
+ transition: background-color 0.3s ease, transform 0.3s ease; } ul li:hover { background-color: #4a77a8;
+ /* Hover color matches the theme */ transform: translateX(5px); } /* Sidebar Menu */ 
+ .sidebar { height: 100%; width: 0; position: fixed; z-index: 1; top: 0; left: 0; background-color: #333; 
+ overflow-x: hidden; transition: 0.5s; padding-top: 60px; } .sidebar a { padding: 10px 15px; 
+ text-decoration: none; font-size: 1.1em; color: #f1f1f1; display: block; transition: 0.3s; } 
+ .sidebar a:hover { color: #52eff2; } .sidebar .closebtn { position: absolute; top: 10px; right: 25px;
+ font-size: 1.5em; color: #f1f1f1; } /* Menu Icon */ .menu-icon { font-size: 1.5em; cursor: pointer; 
+ color: #333; margin-right: 10px; transition: color 0.3s ease; } .menu-icon:hover { color: #52eff2; } 
+ /* Bio Data Sections */ .bio-header h1 { color: #f5f5f5; /* Light color for text */ font-size: 2em; 
+ /* Larger font size for emphasis */ margin-bottom: 20px; } 
+ .bio-section { margin-bottom: 20px; background-color: #3b3b3b; /* Slightly darker background */
+ border: 1px solid #4a77a8; /* Border matches the theme color */ padding: 15px; border-radius: 8px; 
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */ text-align: left; }
+ .bio-section h2 { color: #f5f5f5; /* Light color for text */ font-size: 1.5em; /* Adjusted font size */
+ margin-bottom: 10px; } 
+ .bio-section ul li, .bio-section p { color: #f5f5f5; /* Light color for text */ margin-bottom: 5px; }
+ @media (max-width: 768px) { header h1 { font-size: 1.5em; /* Adjusted font size for smaller screens */ } }
+ /* Responsive adjustment for smaller screens */ 
+ @media (max-width: 768px) { .school-list { grid-template-columns: 1fr 1fr; } } 
+ @media (max-width: 480px) { .school-list { grid-template-columns: 1fr; } }
+ /* Footer Styling */ footer { width: 100%; background-color: #333; color: #f1f1f1; text-align: center;
+ padding: 20px 0; position: relative;
+ /* Sticks to the bottom */ bottom: 0; left: 0; font-size: 0.9em; border-top: 3px solid #4a77a8; } 
+ footer p { margin: 0; font-weight: bold; } footer p b { color: #52eff2; /* Highlighted color for name */
+ transition: color 0.3s ease; } 
+ footer p b:hover { color: #fff; /* Change color on hover for interactivity */ }
+ /* Responsive adjustment for smaller screens */ @media (max-width: 768px) { footer p
+ { font-size: 0.8em; } }
+ main { flex: 1; width: 100%; display: flex; justify-content: center; align-items: center; }
+nav { display: flex; justify-content: space-around; /* Distribute items evenly */ flex-wrap: wrap;
+ /* Wrap items to the next line if needed */ background-color: #333; /* Background color */
+ padding: 10px; } nav a { color: white; /* Link color */ text-align: center; padding: 14px 20px; 
+ text-decoration: none; display: block; } nav a:hover { background-color: #ddd; color: black; }
