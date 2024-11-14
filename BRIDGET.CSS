@@ -137,6 +137,11 @@ section h2 {
 
 #work td {
   text-align: center;
+  background-color: #f9f9f9;  /* Light gray background for table data */
+}
+
+#work td:hover {
+  background-color: #e0e0e0;  /* Slightly darker gray on hover */
 }
 
 ul {
