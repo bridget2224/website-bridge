@@ -136,7 +136,8 @@ section h2 {
 
 #work td {
   text-align: center;
-  background-color: #333;  
+font-weight: bold;
+  background-color: blue;  
 }
 
 #work td:hover {
