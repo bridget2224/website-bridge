@@ -1,47 +1,120 @@
-* { margin: 0;padding: 0;box-sizing: border-box;font-family: Arial, sans-serif;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-body {display: flex;flex-direction: column; align-items: center;padding: 20px;background-color: aqua;color: #fff;}
+body {
+  background-color: #f4f7f6;  /* Light greyish-blue for the general background */
+  color: #333;  /* Dark gray text for readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #333;  /* Dark background for header */
+  color: #fff;  /* White text for contrast */
+}
 
-header { text-align: center; margin-bottom: 20px;}
-header h1 {font-size: 3em;margin-bottom: 10px;color: yellow;}
-header h3 {font-size: 2em;margin-bottom: 10px;color: white;}
-header nav { display: flex;gap: 15px; font-weight: bold;justify-content: center;}
-header nav a {color: yellow;text-decoration: none; padding: 8px 12px; border-radius: 40px;border-left: 2px solid #ddd;
-border-right: 2px solid #ddd; transition: color 0.3s ease, background-color 0.3s ease;}
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: yellow;
+}
 
-header nav a:hover {color: #fff;background-color: #4a4a4a;}
+header h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: white;
+}
 
-#photo {display: flex;justify-content: center;  align-items: center;  margin-bottom: 15px;}
-.photo {  width: 150px;  height: 150px;  object-fit: cover;  border: 3px solid #4a77a8;  transition: transform 0.3s ease;}
+header nav {
+  display: flex;
+  gap: 15px;
+  font-weight: bold;
+  justify-content: center;
+}
 
-.photo:hover { transform: scale(1.1);}
+header nav a {
+  color: yellow;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 40px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
 
+header nav a:hover {
+  color: #fff;
+  background-color: #4a4a4a;  /* Dark gray for hover effect */
+}
 
-section {  width: 100%;  max-width: 600px;  margin-bottom: 20px;  padding: 20px;  background-color: brown;  
-border: 1px solid #4a77a8;  border-radius: 8px;  text-align: center;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
+#photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
-section h2 { color: white; font-size: 1.5em;  margin-bottom: 10px;}
+.photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #4a77a8;
+  transition: transform 0.3s ease;
+}
 
+.photo:hover {
+  transform: scale(1.1);
+}
 
-.schools-grid {  display: grid;  grid-template-columns: repeat(2, 1fr);  gap: 15px;  margin-top: 10px;}
+section {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;  /* White background for content */
+  color: #333;  /* Dark text for contrast */
+  border: 1px solid #4a77a8;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #4a77a8;  /* Soft blue for section titles */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.schools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
 
 .schools-grid div {
   padding: 20px;
-  background-color: black;
+  background-color: #fafafa;  /* Light gray background for cards */
   border-radius: 8px;
   text-align: center;
   font-size: 1em;
   font-weight: bold;
-  color: white;
+  color: #333;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .schools-grid div:hover {
   transform: scale(1.05);
-  background-color: #4a77a8;
+  background-color: #e0e0e0;  /* Slightly darker on hover */
 }
-
 
 #work table {
   width: 100%;
@@ -49,13 +122,15 @@ section h2 { color: white; font-size: 1.5em;  margin-bottom: 10px;}
   color: #fff;
 }
 
-#work table, #work th, #work td {
+#work table,
+#work th,
+#work td {
   border: 1px solid #ddd;
   padding: 10px;
 }
 
 #work th {
-  background-color: black;
+  background-color: #333;  /* Dark background for header */
   font-weight: bold;
   text-align: center;
 }
@@ -64,7 +139,6 @@ section h2 { color: white; font-size: 1.5em;  margin-bottom: 10px;}
   text-align: center;
 }
 
-
 ul {
   list-style-type: none;
   margin: 10px 0;
@@ -72,7 +146,7 @@ ul {
 }
 
 ul li {
-  background-color: #4a4a4a;
+  background-color: #4a4a4a;  /* Dark gray for list items */
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -83,10 +157,9 @@ ul li {
 }
 
 ul li:hover {
-  background-color: #4a77a8;
+  background-color: #4a77a8;  /* Blue for hover effect */
   transform: translateX(5px);
 }
-
 
 .sidebar {
   height: 100%;
@@ -95,7 +168,7 @@ ul li:hover {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #333;
+  background-color: #333;  /* Dark sidebar */
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -111,7 +184,7 @@ ul li:hover {
 }
 
 .sidebar a:hover {
-  color: #52eff2;
+  color: #52eff2;  /* Bright color for hover */
 }
 
 .sidebar .closebtn {
@@ -132,7 +205,7 @@ ul li:hover {
 }
 
 .menu-icon:hover {
-  color: #52eff2;
+  color: #52eff2;  /* Bright color on hover */
 }
 
 .bio-header h1 {
@@ -143,11 +216,11 @@ ul li:hover {
 
 .bio-section {
   margin-bottom: 20px;
-  background-color: #3b3b3b;
+  background-color: #3b3b3b;  /* Dark gray for bio section */
   border: 1px solid #4a77a8;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
@@ -163,11 +236,10 @@ ul li:hover {
   margin-bottom: 5px;
 }
 
-
 footer {
   width: 100%;
-  background-color: #333;
-  color: #f1f1f1;
+  background-color: #222;  /* Dark footer */
+  color: #fff;  /* White text for contrast */
   text-align: center;
   padding: 20px 0;
   position: relative;
@@ -183,12 +255,12 @@ footer p {
 }
 
 footer p b {
-  color: #52eff2;
+  color: #52eff2;  /* Bright accent for bold text */
   transition: color 0.3s ease;
 }
 
 footer p b:hover {
-  color: #fff;
+  color: #fff;  /* Change to white on hover */
 }
 
 main {
@@ -203,7 +275,7 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: #333;
+  background-color: #222;  /* Dark navigation */
   padding: 10px;
 }
 
@@ -220,7 +292,6 @@ nav a:hover {
   color: black;
 }
 
-
 @media (max-width: 768px) {
   header h1 {
     font-size: 2em;
@@ -231,11 +302,11 @@ nav a:hover {
   }
 
   .schools-grid {
-    grid-template-columns: 1fr; /* Stack grid items on smaller screens */
+    grid-template-columns: 1fr;
   }
 
   .bio-section ul li {
-    font-size: 0.9em; /* Adjust font size for readability */
+    font-size: 0.9em;
   }
 
   nav {
@@ -254,14 +325,13 @@ nav a:hover {
   }
 }
 
-
 @media (max-width: 480px) {
   .schools-grid {
     grid-template-columns: 1fr;
   }
 
   .photo {
-    width: 120px; 
+    width: 120px;
     height: 120px;
   }
 
